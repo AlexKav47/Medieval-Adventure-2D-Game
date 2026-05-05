@@ -6,7 +6,12 @@ A 2D medieval pixel-art platformer made in Godot. The game features a playable c
 
 The player explores a medieval-style level, collects coins, avoids enemies, and tries to collect all 10 coins to win. Slimes patrol the level and attack the player on contact. The player has 3 health and can attack slimes to defeat them.
 
-Gameplay video coming soon.
+<div align="center">
+  <h3>Click Below For The Showcase</h3>
+
+  [![Alt text](https://img.youtube.com/vi/Fmx5gN4kOuY/0.jpg)](https://youtu.be/Fmx5gN4kOuY)
+
+</div>
 
 
 
