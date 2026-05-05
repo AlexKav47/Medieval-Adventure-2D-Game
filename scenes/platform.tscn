@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cgqpg3bl07ghk"]
+
+[ext_resource type="Texture2D" uid="uid://dlbjlpr7l5h00" path="res://assets/Sprites/TX Village Props.png" id="1_ba0x2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlgqw"]
+size = Vector2(67, 7)
+
+[node name="Platform" type="AnimatableBody2D" unique_id=197189122]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2065341594]
+texture = ExtResource("1_ba0x2")
+region_enabled = true
+region_rect = Rect2(829, 730, 69, 7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=634885303]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_nlgqw")
+one_way_collision = true

@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://2yvq6yiiep7y"]
+
+[ext_resource type="Script" uid="uid://lekjychlp37n" path="res://scenes/main_menu.gd" id="1_8ln24"]
+[ext_resource type="FontFile" uid="uid://b7au3m4ocauir" path="res://assets/Fonts/slkscr.ttf" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://du373wjd0ehay" path="res://assets/Sprites/Summer4.png" id="4_wu84c"]
+[ext_resource type="AudioStream" uid="uid://cftjxmnnfjb76" path="res://sounds/tap.wav" id="6_rtw2f"]
+
+[node name="Main Menu" type="Control" unique_id=470078436]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ln24")
+
+[node name="TapSound" type="AudioStreamPlayer2D" parent="." unique_id=454090072]
+stream = ExtResource("6_rtw2f")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=732520213]
+layout_mode = 0
+offset_left = -180.0
+offset_top = -105.0
+offset_right = 2124.0
+offset_bottom = 1191.0
+texture = ExtResource("4_wu84c")
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="." unique_id=20427123]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 28.0
+offset_right = 1916.0
+offset_bottom = 195.0
+theme_override_colors/font_color = Color(0.45882353, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_wu84c")
+theme_override_font_sizes/font_size = 160
+text = "Medieval Adventure"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1676051112]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 373.0
+offset_right = 1191.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("1_wu84c")
+theme_override_font_sizes/font_size = 160
+text = "Play"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1557381503]
+layout_mode = 0
+offset_left = 761.0
+offset_top = 720.0
+offset_right = 1150.0
+offset_bottom = 889.0
+theme_override_fonts/font = ExtResource("1_wu84c")
+theme_override_font_sizes/font_size = 160
+text = "Exit"
